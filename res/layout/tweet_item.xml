@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ivProfileImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_launcher" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvScreenName"
+        android:layout_below="@+id/tvScreenName"
+        android:text="This is the tweet body" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTimeStamp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvScreenName"
+        android:alpha=".5"
+        android:paddingLeft="5dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvTimeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvScreenName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvUserName"
+        android:alpha=".5"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/frameLayout1"
+        android:text="@string/foo"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
